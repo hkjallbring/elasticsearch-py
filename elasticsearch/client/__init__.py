@@ -398,7 +398,7 @@ class Elasticsearch(object):
         return data
 
     @query_params('consistency', 'detect_noop', 'fields', 'lang', 'parent',
-        'refresh', 'retry_on_conflict', 'routing', 'script', 'script_id',
+        'refresh', 'retry_on_conflict', 'routing', 'script', 'script_id','script_file',
         'scripted_upsert', 'timeout', 'timestamp', 'ttl', 'version',
         'version_type')
     def update(self, index, doc_type, id, body=None, params=None):
